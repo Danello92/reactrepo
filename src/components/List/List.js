@@ -19,7 +19,6 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-
        <Hero titleText={this.props.title}
              image={this.props.image}/>
        <div className={styles.description}>
@@ -30,10 +29,7 @@ class List extends React.Component {
         <Column><p>Robot</p></Column>
         <Column><p>Bugs</p></Column>
       </div>
-
-       <Hero titleText={this.props.title} />
-
-      </section>
+   </section>
     )
   }
 }
