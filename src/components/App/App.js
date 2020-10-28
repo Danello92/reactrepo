@@ -10,8 +10,12 @@ class App extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>My first React app</h1>
         <h2 className={styles.subtitle}>hello world</h2>
+<<<<<<< HEAD
         <List title={['things to do',<sup key='1'>Soon!</sup>]}
               image={"http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"}/>
+=======
+        <List title='Things to do'/>
+>>>>>>> refs/remotes/origin/main
       </main>
     )
   }
