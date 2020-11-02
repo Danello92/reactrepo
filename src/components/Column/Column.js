@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 // import Creator from '../Creator/Creator.js';
 import Icon from '../Icon/Icon.js';
+import { settings } from '../../data/dataStore';
 
 class Column extends React.Component {
   
@@ -14,9 +15,11 @@ class Column extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
-    
     id: PropTypes.string,
     icon: PropTypes.string,
+  }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
   }
   // addCard(title) {
   //   this.setState(state => (
