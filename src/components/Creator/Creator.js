@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './Creator.scss';
-import Button from '../Button/Button';
+import Button from '../Button/Button.js';
 import PropTypes from 'prop-types';
-
 
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
-    action: PropTypes.func,
+    action: PropTypes.action,
   }
 
   static defaultProps = {
@@ -41,7 +40,6 @@ class Creator extends React.Component {
     this.setState({
       value: '',
       visibleButtons: false,
-      window: confirm('Napewno chcesz anulować?'),
     });
   }
 

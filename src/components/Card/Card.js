@@ -3,18 +3,20 @@ import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
 class Card extends React.Component {
-  
   static propTypes = {
     title: PropTypes.node.isRequired,
-  }
+    id: PropTypes.string,
+    index: PropTypes.number,
+  };
 
   render() {
-    const {title}= this.props;
+    const {title} = this.props;
     return (
       <section className={styles.component}>
-        {title}
+        <h3>{title}</h3>
       </section>
     );
   }
-}
+}	
+
 export default Card;
