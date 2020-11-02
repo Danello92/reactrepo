@@ -13,7 +13,7 @@ class Column extends React.Component {
     static propTypes = {
       title: PropTypes.string,
       icon: PropTypes.string,
-      cards: PropTypes.func,
+      cards: PropTypes.array,
     }
     addCard(title){
       this.setState(state => (
