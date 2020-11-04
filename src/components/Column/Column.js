@@ -8,13 +8,12 @@ import Icon from '../Icon/Icon.js';
 
 class Column extends React.Component {
   
-  state = {
-    cards: this.props.cards || [],
-  }
+  // state = {
+  //   cards: this.props.cards || [],
+  // }
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
-    
     id: PropTypes.string,
     icon: PropTypes.string,
   }

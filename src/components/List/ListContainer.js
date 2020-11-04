@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import List from './List';
+import List from './List.js';
 
 export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
 
