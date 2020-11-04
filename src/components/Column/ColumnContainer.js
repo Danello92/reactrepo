@@ -1,4 +1,5 @@
 import {connect} from 'react-redux';
+
 import Column from './Column.js';
 
 export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);
