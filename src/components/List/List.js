@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/ColumnContainer.js';
-import PropTypes from 'prop-types';
+import PropTypes, {string} from 'prop-types';
 import {settings} from '../../data/dataStore.js';
 import ReactHtmlParser from 'react-html-parser';
 //import Creator from '../Creator/Creator.js';
@@ -14,13 +14,12 @@ class List extends React.Component {
   // }
   static propTypes = {
     title: PropTypes.node.isRequired,
-    description: PropTypes.node,
+    description: string,
     image: PropTypes.string.isRequired,
     columns: PropTypes.array.isRequired,
-    addColumn: PropTypes.func,
   }
   static defaultProps = {
-    description: settings.defaultListDescription,
+    description: settings.defaultColumnIcon,
   }
   // addColumn(title){
   //   this.setState(state => (
@@ -49,9 +48,6 @@ class List extends React.Component {
           {columns.map(columnData => (
             <Column key={columnData.id} {...columnData} />
           ))}
-          {/* {this.state.columns.map(({key, ...columnProps}) => (
-            <Column key={key} {...columnProps} />
-          ))} */}
         </div>
         {/*
         <div className={styles.creator}>
