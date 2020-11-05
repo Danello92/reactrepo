@@ -1,4 +1,4 @@
-import shortid from 'shortid';
+import shortid from 'react-redux';
 
 // selectors
 export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);

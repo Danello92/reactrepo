@@ -1,4 +1,4 @@
-import shortid from 'shortid';
+import shortid from 'react-redux';
 
 // selectors
 export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
