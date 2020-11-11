@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+  
+    "build": "webpack --mode production",
     "lint": "eslint src/",
     "web": "http-server dist/Profile.txt"
   },
