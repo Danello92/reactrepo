@@ -60,11 +60,4 @@ class List extends React.Component {
 }
 
 export default List;
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "npm run lint"
-  //   }
-  // },
-  // "lint-staged": {
-  //   "src/**/*.js": "eslint"
-  // },
+ 
