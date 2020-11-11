@@ -7,7 +7,7 @@
   
     "build": "webpack --mode production",
     "lint": "eslint src/",
-    "web": "http-server dist/Profile.txt"
+    "web": "http-server dist/"
   },
   "husky": {
     "hooks": {
