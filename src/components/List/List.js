@@ -6,6 +6,7 @@ import PropTypes, {string} from 'prop-types';
 import {settings} from '../../data/dataStore.js';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
+import Container from '../Container/Container.js';
 
 class List extends React.Component {
   // state = {
@@ -52,6 +53,7 @@ class List extends React.Component {
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={addColumn}/>
         </div>
+        <Container></Container>
       </section>
     );
   }
