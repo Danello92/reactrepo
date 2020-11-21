@@ -22,22 +22,6 @@ class Column extends React.Component {
   static defaultProps = {
     icon: settings.defaultColumnIcon,
   }
-
-  // addCard(title) {
-  //   this.setState(state => (
-  //     {
-  //       cards: [
-  //         ...state.cards,
-  //         {
-  //           key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
-  //           title,
-  //           icon: 'list-alt',
-  //           cards: [],
-  //         },
-  //       ],
-  //     }
-  //   ));
-  // }
   render() {
     const { title, icon, cards, addCard } = this.props;
     return (

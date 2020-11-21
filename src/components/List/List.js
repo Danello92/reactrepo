@@ -9,9 +9,6 @@ import Creator from '../Creator/Creator.js';
 import Container from '../Container/Container.js';
 
 class List extends React.Component {
-  // state = {
-  //   columns: this.props.columns || [],
-  // }
   static propTypes = {
     title: PropTypes.node.isRequired,
     description: string,
@@ -19,27 +16,10 @@ class List extends React.Component {
     columns: PropTypes.array.isRequired,
     addColumn: PropTypes.func,
   }
-  static defaultProps = {
-    description: settings.defaultColumnIcon,
-  }
-  // addColumn(title){
-  //   this.setState(state => (
-  //     {
-  //       columns: [
-  //         ...state.columns,
-  //         {
-  //           key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
-  //           title,
-  //           icon: 'list-alt',
-  //           cards: [],
-  //         },
-  //       ],
-  //     }
-  //   ));
-  // }  
   render() {
     const {title, image, description, columns, addColumn} = this.props;
     return (
+      <Container>
       <section className={styles.component}>
         <Hero titleText={title} imageProp={image}/>
         <div className={styles.description}>
@@ -53,8 +33,8 @@ class List extends React.Component {
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={addColumn}/>
         </div>
-        <Container></Container>
       </section>
+      </Container>
     );
   }
 }
