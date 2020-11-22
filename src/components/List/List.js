@@ -20,20 +20,20 @@ class List extends React.Component {
     const {title, image, description, columns, addColumn} = this.props;
     return (
       <Container>
-      <section className={styles.component}>
-        <Hero titleText={title} imageProp={image}/>
-        <div className={styles.description}>
-          {ReactHtmlParser(description)}
-        </div>
-        <div className={styles.columns}>
-          {columns.map(columnData => (
-            <Column key={columnData.id} {...columnData} />
-          ))}
-        </div>
-        <div className={styles.creator}>
-          <Creator text={settings.columnCreatorText} action={addColumn}/>
-        </div>
-      </section>
+        <section className={styles.component}>
+          <Hero titleText={title} imageProp={image}/>
+          <div className={styles.description}>
+            {ReactHtmlParser(description)}
+          </div>
+          <div className={styles.columns}>
+            {columns.map(columnData => (
+              <Column key={columnData.id} {...columnData} />
+            ))}
+          </div>
+          <div className={styles.creator}>
+            <Creator text={settings.columnCreatorText} action={addColumn}/>
+          </div>
+        </section>
       </Container>
     );
   }

@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Home.scss';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import ListLink from '../../components/ListLink/ListLink';
 
 class Home extends React.Component {
   static propTypes = {
-    title: PropTypes.node,
-    subtitle: PropTypes.node,
-    lists: PropTypes.array,
+    title: propTypes.node,
+    subtitle: propTypes.node,
+    lists: propTypes.array,
   }
   render() {
     const {title, subtitle, lists} = this.props;

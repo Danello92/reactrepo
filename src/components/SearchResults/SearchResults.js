@@ -1,24 +1,21 @@
 import React from 'react';
 import styles from './SearchResults.scss';
 import Card from '../Card/Card';
-import propTypes from 'prop-types';
-import Container from '../Container/Container';
-
+import PropTypes from 'prop-types';
 
 class SearchResults extends React.Component {
   static propTypes = {
-    cards: propTypes.array,
+    cards: PropTypes.array,
   }
+  
   render() {
-    const {cards} = this.props;
+    const { cards } = this.props;
     return (
-      <Container>
-        <section className={ styles.component }>
+      <section className={styles.component}>
         {cards.map(cardData => (
           <Card key={cardData.id} {...cardData} />
         ))}
-        </section>
-      </Container>
+      </section>
     );
   }
 }

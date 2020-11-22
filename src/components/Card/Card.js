@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Card.scss';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class Card extends React.Component {
   static propTypes = {
-    title: PropTypes.node.isRequired,
-    id: PropTypes.string,
-    index: PropTypes.number,
+    title: propTypes.node.isRequired,
+    id: propTypes.string,
+    index: propTypes.number,
   };
 
   render() {
